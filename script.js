@@ -8,9 +8,42 @@ document.addEventListener('mousemove', (posicion) => {
     // Calculamos el movimiento (dividir por 50 para que sea suave)
     const x = (window.innerWidth / 2 - mouseX) / 50;
     const y = (window.innerHeight / 2 - mouseY) / 50;
-    
+
     background.style.transform = `translate(${x}px, ${y}px) scale(1.1)`;
 });
+
+ // Este Array contiene los estados de tu sistema de automatización
+ const mensajesTerminal = [
+    "Iniciando protocolo de sistema...",
+    "Cargando módulos de RPA con UiPath...",
+    "Conectando a base de datos SQL Server...",
+    "Sincronizando meta: Objetivo $3,000 USD", // meta 2026-2027
+    "Estado: Sistema listo para el despliegue."
+];
+
+
+
+let indiceLog = 0; // Puntero para saber en qué mensaje vamos
+
+function animarTerminal() {
+    const pantallaLog = document.getElementById('log-texto');
+    
+    if (pantallaLog) {
+        // Mostramos el mensaje actual del Array
+        pantallaLog.innerText = `> ${mensajesTerminal[indiceLog]}`;
+        
+        // Incrementamos el índice para el próximo mensaje
+        indiceLog++;
+        
+        // Reiniciamos si llegamos al final de la lista
+        if (indiceLog >= mensajesTerminal.length) {
+            indiceLog = 0;
+        }
+    }
+}
+
+// Ejecutamos la función cada 2.5 segundos (2500ms)
+setInterval(animarTerminal, 2500);
 
 // 1. Seleccionamos los elementos del menú hamburguesa
 const boton = document.getElementById('menu-btn');
