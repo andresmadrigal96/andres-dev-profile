@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniero de Software & IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white min-h-screen">
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+
+            <div class="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                AMP | AI Dev
+            </div>
+        
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none z-50"> 
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        
+            <div id="menu-items" class="hidden md:flex md:flex-row md:static md:w-auto md:bg-transparent md:p-0 md:space-y-0 md:space-x-8 flex-col absolute top-full left-0 right-0 w-full bg-[#111] p-8 space-y-6 z-[100]">
+                <a href="index.html" class="text-gray-300 hover:text-white transition">Inicio</a>
+                <a href="progreso.html" class="text-gray-300 hover:text-white transition">Progreso</a>
+            </div>
+        
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Galaxy Background -->
+        <div class="absolute inset-0 galaxy-background"></div>
+        <!-- Background overlay -->
+        <div class="absolute inset-0 hero-overlay"></div>
+        
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 container mx-auto px-6 text-center">
+            <div class="max-w-5xl mx-auto">
+                <h1 class="text-6xl md:text-8xl lg:text-9xl font-black mb-6 leading-tight">
+                    <span class="block bg-gradient-to-r from-green-400 via-green-300 to-blue-400 bg-clip-text text-transparent">
+                        Ingeniero de
+                    </span>
+                    <span class="block bg-gradient-to-r from-blue-400 via-blue-300 to-green-400 bg-clip-text text-transparent">
+                        Software & IA
+                    </span>
+                </h1>
+                
+                <div class="mb-12">
+                    <p class="text-2xl md:text-3xl text-gray-300 font-semibold mb-2">
+                        Especialista en Automatización
+                    </p>
+                    <p class="text-xl md:text-2xl text-gray-400">
+                        Globant
+                    </p>
+                </div>
+
+                <p id="saludo-ingeniero" class="text-green-400 font-mono text-xl mb-6 tracking-tighter"></p>
+                <a id="enlace-progreso" href="progreso.html" class="blizzard-button inline-block px-12 py-5 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-500 hover:to-blue-500 text-white font-bold text-lg uppercase tracking-wider border-2 border-green-400/50 shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:shadow-[0_0_40px_rgba(16,185,129,0.5)] transition-all duration-300 transform hover:scale-105">
+                    Ver mi Progreso
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

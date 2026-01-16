@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Progreso - Andrés Madrigal Peláez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white min-h-screen">
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+
+            <div class="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                AMP | AI Dev
+            </div>
+        
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none z-50"> 
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        
+            <div id="menu-items" class="hidden md:flex md:flex-row md:static md:w-auto md:bg-transparent md:p-0 md:space-y-0 md:space-x-8 flex-col absolute top-full left-0 right-0 w-full bg-[#111] p-8 space-y-6 z-[100]">
+                <a href="index.html" class="text-gray-300 hover:text-white transition">Inicio</a>
+                <a href="progreso.html" class="text-gray-300 hover:text-white transition">Progreso</a>
+            </div>
+        
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 overflow-hidden">
+        <!-- Galaxy Background -->
+        <div class="absolute inset-0 galaxy-background"></div>
+        <div class="absolute inset-0 section-overlay"></div>
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+        
+        <div class="relative z-10 container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 id="saludo-ingeniero" class="text-2xl font-mono text-green-400 mb-8 tracking-tighter"></h2>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-6">
+                    <span class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                        Andrés Madrigal Peláez
+                    </span>
+                </h1>
+                <div class="inline-block px-8 py-3 border-2 border-green-500/50 bg-gradient-to-r from-green-500/10 to-blue-500/10 backdrop-blur-sm mt-20">
+                    <p class="text-2xl md:text-3xl text-gray-200 font-bold">
+                        5 Años de Experiencia en RPA
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="relative py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto">
+                <!-- Main Card -->
+                <div class="blizzard-card bg-gradient-to-br from-gray-900/90 to-black border-2 border-green-500/30 rounded-lg p-8 md:p-12 mb-12">
+                    <div class="flex items-start mb-8">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg flex items-center justify-center mr-6 shadow-lg shadow-green-500/50">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+                                Mi Camino hacia Full Stack
+                            </h2>
+                            <div class="space-y-6 text-lg text-gray-300 leading-relaxed">
+                                <p>
+                                    Este sitio web representa más que un proyecto: es mi <span class="text-green-400 font-bold">motivación constante</span> para convertirme en un desarrollador Full Stack completo. Con una sólida base de <span class="text-blue-400 font-bold">5 años en Automatización Robótica de Procesos (RPA)</span>, ahora estoy expandiendo mis habilidades para dominar tanto el frontend como el backend.
+                                </p>
+                                <p>
+                                    Mi objetivo es construir un <span class="text-green-400 font-bold">portafolio rico y diverso</span> que demuestre no solo mis conocimientos técnicos, sino también mi capacidad para crear soluciones completas y escalables. Cada línea de código, cada proyecto y cada desafío superado me acerca más a ser el profesional que el mercado necesita.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t-2 border-green-500/20 pt-8 mt-8">
+                        <p class="text-xl text-gray-400 italic text-center font-semibold">
+                            "La tecnología es mejor cuando une a las personas"
+                        </p>
+                        <p class="text-center text-gray-500 mt-2">
+                            Estoy construyendo mi futuro, un proyecto a la vez.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="blizzard-card bg-gradient-to-br from-green-500/10 to-transparent border-2 border-green-500/30 rounded-lg p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-black text-green-400">Experiencia Actual</h3>
+                        </div>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            Especialista en RPA con <span class="text-green-400 font-bold">5 años</span> desarrollando soluciones de automatización empresarial en <span class="text-blue-400 font-semibold">Globant</span> y <span class="text-blue-400 font-semibold">NTT Data</span>.
+                        </p>
+                    </div>
+
+                    <div class="blizzard-card bg-gradient-to-br from-blue-500/10 to-transparent border-2 border-blue-500/30 rounded-lg p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-black text-blue-400">Objetivo</h3>
+                        </div>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            Convertirme en <span class="text-blue-400 font-bold">Full Stack Developer</span> con un portafolio que refleje versatilidad, calidad e <span class="text-green-400 font-semibold">innovación</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
+            <div class="p-6 bg-black/40 border border-green-500/20 rounded-xl backdrop-blur-md">
+                <h3 class="text-white font-mono text-sm mb-6 uppercase tracking-widest border-b border-green-500/30 pb-2">_STACK_TECNOLÓGICO</h3>
+                
+                <div class="mt-12 p-10 bg-gradient-to-br from-gray-900 to-blue-900/40 border-2 border-blue-500/30 rounded-3xl text-center shadow-[0_0_60px_rgba(37,99,235,0.15)] max-w-4xl mx-auto">
+                    <h3 class="text-blue-400 font-mono text-xs uppercase tracking-[0.4em] mb-4">OBJETIVO PROFESIONAL 2026</h3>
+                    
+                    <div class="text-6xl font-black text-white mb-6 tracking-tighter">
+                        <span id="contador-meta">$0</span> 
+                        <span class="text-2xl text-blue-500/60 ml-2">/ $3,000 USD</span>
+                    </div>
+                    
+                    <div class="w-full bg-black/50 rounded-full h-5 p-1 border border-blue-400/20">
+                        <div id="barra-meta" class="bg-gradient-to-r from-blue-600 to-cyan-400 h-full rounded-full transition-all duration-[2500ms] ease-out shadow-[0_0_15px_rgba(6,182,212,0.5)]" style="width: 0%"></div>
+                    </div>
+                    
+                    <p class="mt-6 text-blue-200/50 text-xs font-mono uppercase tracking-widest">
+                        Fase actual: Expansión Full Stack & AI
+                    </p>
+                </div>
+                
+                <div class="mt-6 mb-6">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-blue-400 font-mono text-xs">RPA (AA, Uipath / NTT Data Exp)</span>
+                        <span class="text-blue-400 font-bold text-xs">95%</span>
+                    </div>
+                    <div class="w-full bg-gray-800 rounded-full h-1.5">
+                        <div id="bar-rpa" class="bg-blue-500 h-1.5 rounded-full transition-all duration-[2000ms] ease-out" style="width: 0%"></div>
+                    </div>
+                </div>
+        
+                <div class="mb-6">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-green-400 font-mono text-xs">SQL Server & Automatización</span>
+                        <span class="text-green-400 font-bold text-xs">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-800 rounded-full h-1.5">
+                        <div id="bar-sql" class="bg-green-500 h-1.5 rounded-full transition-all duration-[2000ms] ease-out" style="width: 0%"></div>
+                    </div>
+                </div>
+        
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-purple-400 font-mono text-xs">AI Dev & Prompt Engineering</span>
+                        <span class="text-purple-400 font-bold text-xs">65%</span>
+                    </div>
+                    <div class="w-full bg-gray-800 rounded-full h-1.5">
+                        <div id="bar-ai" class="bg-purple-500 h-1.5 rounded-full transition-all duration-[2000ms] ease-out" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="flex items-center justify-center p-6 border border-blue-500/10 rounded-xl bg-blue-500/5">
+                <p class="text-gray-400 italic text-center text-sm">
+                    "Transformando procesos complejos en soluciones digitales eficientes mediante el uso de IA y Automatización."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t-2 border-gray-800 py-8 mt-20">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2026 Andrés Madrigal Peláez. Construyendo el futuro, un proyecto a la vez.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
