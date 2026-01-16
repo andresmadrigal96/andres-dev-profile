@@ -31,7 +31,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 overflow-hidden">
+    <section class="relative pt-32 pb-4 overflow-hidden">
         <!-- Galaxy Background -->
         <div class="absolute inset-0 galaxy-background"></div>
         <div class="absolute inset-0 section-overlay"></div>
@@ -58,7 +58,7 @@
     </section>
 
     <!-- Main Content -->
-    <section class="relative py-20">
+    <section class="relative pt-8 pb-20">
         <div class="container mx-auto px-6">
             <div class="max-w-5xl mx-auto">
                 <!-- Main Card -->
@@ -131,14 +131,14 @@
                 <h3 class="text-white font-mono text-sm mb-6 uppercase tracking-widest border-b border-green-500/30 pb-2">_STACK_TECNOLÓGICO</h3>
                 
                 <div class="mt-12 p-10 bg-gradient-to-br from-gray-900 to-blue-900/40 border-2 border-blue-500/30 rounded-3xl text-center shadow-[0_0_60px_rgba(37,99,235,0.15)] max-w-4xl mx-auto">
-                    <h3 class="text-blue-400 font-mono text-xs uppercase tracking-[0.4em] mb-4">OBJETIVO PROFESIONAL 2026</h3>
+                    <h3 class="text-blue-400 font-mono text-xs uppercase tracking-[0.4em] mb-4">OBJETIVO PROFESIONAL 2026-2027</h3>
                     
                     <div class="text-6xl font-black text-white mb-6 tracking-tighter">
                         <span id="contador-meta">$0</span> 
                         <span class="text-2xl text-blue-500/60 ml-2">/ $3,000 USD</span>
                     </div>
 
-                    <div class="bg-black text-green-400 font-mono p-4 rounded-lg mt-8 border border-gray-800 shadow-2xl mx-auto max-w-lg">
+                    <div class="bg-black text-green-400 font-mono p-4 rounded-lg mt-8 border border-gray-800 shadow-2xl mx-auto max-w-lg h-28 overflow-y-auto">
                         <div class="flex items-center gap-2 mb-2 border-b border-gray-800 pb-2">
                             <div class="w-3 h-3 bg-red-500 rounded-full"></div>
                             <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
@@ -188,10 +188,82 @@
                 </div>
             </div>
         
-            <div class="flex items-center justify-center p-6 border border-blue-500/10 rounded-xl bg-blue-500/5">
-                <p class="text-gray-400 italic text-center text-sm">
-                    "Transformando procesos complejos en soluciones digitales eficientes mediante el uso de IA y Automatización."
-                </p>
+            <div class="group relative bg-[#0a0a0a] border border-gray-800 p-8 rounded-xl hover:border-blue-500/50 transition-all duration-500">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl opacity-0 group-hover:opacity-10 blur transition duration-500"></div>
+                <div class="relative">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-blue-400 font-mono text-[10px] uppercase tracking-widest px-2 py-1 bg-blue-500/10 rounded border border-blue-500/20">Banking / Automation Anywhere</span>
+                        <i class="fas fa-university text-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Arquitectura Resiliente Banamex</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Ayudé en el diseño y luego implementé una arquitectura de **6 fases con checkpoints** para garantizar resiliencia total. El sistema gestiona la concurrencia de múltiples bots mediante **SQL Server (Locked Flags)**, permitiendo escalabilidad horizontal sin colisiones de datos y recuperación automática ante interrupciones.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-2 text-xs text-gray-500">
+                            <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                            Lógica condicional basada en montos y generación de folios dinámicos.
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-gray-500">
+                            <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                            Integración segura con bases de datos para integridad de transacciones.
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-bold py-1 px-2 bg-gray-900 text-blue-400 rounded border border-blue-900/30">SQL SERVER</span>
+                        <span class="text-[10px] font-bold py-1 px-2 bg-gray-900 text-blue-400 rounded border border-blue-900/30">MULTI-BOT SCALABILITY</span>
+                        <span class="text-[10px] font-bold py-1 px-2 bg-gray-900 text-blue-400 rounded border border-blue-900/30">CONCURRENCY CONTROL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-20 bg-black/30 border-t border-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-black text-white tracking-tighter">MISIONES_EJECUTADAS</h2>
+                <div class="h-px bg-gradient-to-r from-blue-500 to-transparent flex-1"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group relative bg-[#0a0a0a] border border-gray-800 p-8 rounded-xl hover:border-blue-500/50 transition-all duration-500">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl opacity-0 group-hover:opacity-10 blur transition duration-500"></div>
+                    <div class="relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-blue-400 font-mono text-xs uppercase tracking-widest px-2 py-1 bg-blue-500/10 rounded">RPA / UiPath</span>
+                            <i class="fas fa-robot text-blue-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Conciliación Bancaria Automatizada</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Desarrollo de un ecosistema de bots que procesan estados de cuenta masivos, validan contra ERP SAP y generan reportes de discrepancias. Reducción del error humano en un 98%.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] font-bold py-1 px-2 bg-gray-900 text-gray-400 rounded">Automation Anywhere</span>
+                            <span class="text-[10px] font-bold py-1 px-2 bg-gray-900 text-gray-400 rounded">Soporte en Uipath</span>
+                            <span class="text-[10px] font-bold py-1 px-2 bg-gray-900 text-gray-400 rounded">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="group relative bg-[#0a0a0a] border border-gray-800 p-8 rounded-xl hover:border-green-500/50 transition-all duration-500">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl opacity-0 group-hover:opacity-10 blur transition duration-500"></div>
+                    <div class="relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-green-400 font-mono text-xs uppercase tracking-widest px-2 py-1 bg-green-500/10 rounded">Full Stack / JS</span>
+                            <i class="fas fa-code text-green-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Monitor de Rendimiento Bot-Health</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Dashboard en tiempo real para supervisar la salud de las licencias de RPA. Visualización de logs críticos y alertas automáticas mediante Webhooks.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] font-bold py-1 px-2 bg-gray-900 text-gray-400 rounded">Tailwind CSS</span>
+                            <span class="text-[10px] font-bold py-1 px-2 bg-gray-900 text-gray-400 rounded">Node.js</span>
+                            <span class="text-[10px] font-bold py-1 px-2 bg-gray-900 text-gray-400 rounded">API Rest</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -123,7 +123,7 @@ function gestionarIdentidad() {
 
     // 4. Si el elemento existe en esta página Y tenemos el nombre, lo escribimos
     if (etiquetaSaludo && nombreGuardado) {
-        etiquetaSaludo.innerText = `> BIENVENIDO, INGENIERO ${nombreGuardado.toUpperCase()}`;
+        etiquetaSaludo.innerText = `> BIENVENIDO ${nombreGuardado.toUpperCase()}`;
     }
 }
 
